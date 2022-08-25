@@ -1,7 +1,7 @@
 name: geolocation_flutter
 description: flutter package for find location address data without api key or limit.
-version: 0.0.1
-homepage: https://github.com/hassanbasanjide
+version: 0.0.2
+homepage: https://github.com/hassanbasanjide/geolocation_flutter
 
 environment:
   sdk: ">=2.17.6 <3.0.0"

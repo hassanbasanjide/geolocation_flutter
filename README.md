@@ -11,15 +11,18 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-A Package to find address data by lat and lng with translated data looking by language parameter without limit and api key for google map
+a Package for find geo location data without limit of usage and map api key
 
 
 
+## Getting started
+import "package:geolocation_flutter/geolocaton_flutter.dart"
 
-import "package:flutter_geolocation/flutter_geolocation.dart"
+then use getGeoLocationData function and pass parameter by lat and lng or target language code
 
-final GeoLocationData data =await getGeoLocationData(
-latLng:GeoLocationLatLng(lat:50.12136477537388,lng:8.636582699999995),
-language:'en'
-);
+## Usage
+
+import 'package:geolocation_flutter/geolocation_flutter..dart';
+final GeoLocationData data =
+      await getGeoLocationData(latLng: GeoLocationLatLng(50.12136477537388, 8.636582699999995));
 

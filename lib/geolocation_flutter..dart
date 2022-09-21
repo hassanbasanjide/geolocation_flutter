@@ -22,14 +22,16 @@ Future<GeoLocationData> getGeoLocationData(
   );
   final Map<String, dynamic> responseMap =
       response.data as Map<String, dynamic>;
-  final String? street = responseMap['address']['road'] as String?;
-  final String? block = responseMap['address']['neighbourhood'] as String?;
-  final String? postCode = responseMap['address']['postcode'] as String?;
-  final String? country = responseMap['address']['country'] as String?;
-  final String? countryCode = responseMap['address']['country_code'] as String?;
-  final String? state = responseMap['address']['state'] as String?;
-  final String? houseNumber = responseMap['address']['house_number'] as String?;
-  final String? city = responseMap['address']['city'] as String?;
+  final Map<String, dynamic>? address = response.data as Map<String, dynamic>?;
+
+  final String? street = address?['road'] as String?;
+  final String? block = address?['neighbourhood'] as String?;
+  final String? postCode = address?['postcode'] as String?;
+  final String? country = address?['country'] as String?;
+  final String? countryCode = address?['country_code'] as String?;
+  final String? state = address?['state'] as String?;
+  final String? houseNumber = address?['house_number'] as String?;
+  final String? city = address?['city'] as String?;
   return GeoLocationData(
     street,
     block,

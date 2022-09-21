@@ -22,7 +22,8 @@ Future<GeoLocationData> getGeoLocationData(
   );
   final Map<String, dynamic> responseMap =
       response.data as Map<String, dynamic>;
-  final Map<String, dynamic>? address = response.data as Map<String, dynamic>?;
+  final Map<String, dynamic>? address =
+      responseMap['address'] as Map<String, dynamic>?;
 
   final String? street = address?['road'] as String?;
   final String? block = address?['neighbourhood'] as String?;

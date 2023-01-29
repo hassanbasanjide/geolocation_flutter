@@ -22,7 +22,7 @@ then use getGeoLocationData function and pass parameter by lat and lng or target
 
 ## Usage
 ```dart
-import 'package:geolocation_flutter/geolocation_flutter..dart';
+import 'package:geolocation_flutter/geolocation_flutter.dart';
 final GeoLocationData data =
       await getGeoLocationData(latLng: GeoLocationLatLng(50.12136477537388, 8.636582699999995),);
 ```
